@@ -29,7 +29,7 @@ async def on_member_join(member):
         
         # Preuzimanje avatara
         response = requests.get(avatar_url)
-        avatar = Image.open(BytesIO(response.content)).convert("RGBA")
+        avatar = Image.open(BytesIO(response.content)).convert("RGB")
         
         # Rezanje avatara u oblik kruga
         avatar = avatar.resize((150, 150), Image.LANCZOS)
