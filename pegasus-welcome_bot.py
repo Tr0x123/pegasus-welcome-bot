@@ -64,7 +64,7 @@ async def on_member_join(member):
         
         # Dodavanje teksta "PEGASUS" ispod korisničkog imena
         text_pegasus = "PEGASUS"
-        pegasus_size = draw.textbbox((0, 0), text_pegasus, font=font_pegasus)
+        pegasus = draw.textbbox((0, 0), text_pegasus, font=font_pegasus)
         pegasus_position = ((background.width - (pegasus_size[2] - pegasus_size[0])) // 2, username_position[1] + 50)
         draw.text(pegasus_position, text_pegasus, font=font_pegasus, fill=(255, 255, 255))
         
