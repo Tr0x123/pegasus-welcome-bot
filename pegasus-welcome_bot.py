@@ -42,7 +42,7 @@ async def on_member_join(member):
         
         # Postavljanje avatara na sredinu pozadinske slike
         avatar_position = ((background.width - avatar.width) // 2, 50)
-        background.paste(avatar, avatar_position, avatar)
+        background(avatar, avatar_position, avatar)
         
         # Učitavanje fontova
         font_welcome = ImageFont.truetype(FONT_PATH, 50)  # Font za "DOBRODOŠLI"
